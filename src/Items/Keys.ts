@@ -25,18 +25,18 @@ export default class Keys {
     }
 
     private _Up: Phaser.Key;
-    public get Up(): Phaser.Key {
+    public get Forward(): Phaser.Key {
         return this._Up;
     }
-    public set Up(v: Phaser.Key) {
+    public set Forward(v: Phaser.Key) {
         this._Up = v;
     }
 
     private _Down: Phaser.Key;
-    public get Down(): Phaser.Key {
+    public get Back(): Phaser.Key {
         return this._Down;
     }
-    public set Down(v: Phaser.Key) {
+    public set Back(v: Phaser.Key) {
         this._Down = v;
     }
 

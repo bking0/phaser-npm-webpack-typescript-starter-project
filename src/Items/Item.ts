@@ -1,13 +1,6 @@
 export default class Item {
     constructor() {
     }
-    GetImageCenter(gameX: number, gameY: number) {
-        let center: { x: number, y: number } = { x: undefined, y: undefined };
-        center.x = (gameX - (this._imageWidth / 2));
-        center.y = (gameY - (this._imageHeight / 2));
-        return center;
-    };
-
 
     private _imageWidth: number;
     public get ImageWidth(): number {
