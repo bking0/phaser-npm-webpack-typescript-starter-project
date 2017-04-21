@@ -13,7 +13,7 @@ export default class Preloader extends Phaser.State {
 
         this.loadBarSprite(gameX, gameY, preloadSpritesArrayName);
         this.loadFrameSprite(gameX, gameY, preloadSpritesArrayName);
-        
+
         this.game.load.setPreloadSprite(this.preloadBarSprite);
 
         AssetUtils.Loader.loadAllAssets(this.game, this.startGame, this);
