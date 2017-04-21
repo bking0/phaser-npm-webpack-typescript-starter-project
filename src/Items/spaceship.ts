@@ -10,8 +10,8 @@ export default class Spaceship extends Item {
         super();
         this.ImageHeight = 64;
         this.ImageWidth = 64;
-        let center = super.GetImageCenter(game.world.centerX, game.world.centerY);
-        this._spaceshipImage = game.add.image(center.x, center.y, Assets.Images.ImagesSpaceship.getName());
+        // let center = super.GetImageCenter(game.world.centerX, game.world.centerY);
+        this._spaceshipImage = game.add.image(game.world.centerX, game.world.centerY, Assets.Images.ImagesSpaceship.getName());
         this._spaceshipImage.anchor.setTo(0.5, 0.5);
     }
 
